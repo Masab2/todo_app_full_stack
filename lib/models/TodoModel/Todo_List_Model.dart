@@ -23,7 +23,7 @@ class TodosList with _$TodosList {
     @JsonKey(name: 'userId') @Default('') String userid,
     @JsonKey(name: 'title') @Default('') String title,
     @JsonKey(name: 'description') @Default('') String description,
-    @JsonKey(name: 'Date') @Default('') String date,
+    @JsonKey(name: 'date') @Default('') String date,
     @JsonKey(name: 'createdAt') @Default('') String createdDate,
   }) = _TodosList;
 

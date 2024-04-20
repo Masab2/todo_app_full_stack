@@ -6,6 +6,7 @@ import 'package:todo_app_full_stack/utils/Colors/AppColor.dart';
 import 'package:todo_app_full_stack/viewModel/CreateTodoViewModel/CreateTodoViewModel.dart';
 import 'package:todo_app_full_stack/viewModel/HomeViewModel/HomeViewModel.dart';
 import 'package:todo_app_full_stack/viewModel/LoginViewModel/LoginViewModel.dart';
+import 'package:todo_app_full_stack/viewModel/ProfileViewModel/ProfileViewModel.dart';
 import 'package:todo_app_full_stack/viewModel/SignupViewModel/SignupViewModel.dart';
 import 'package:todo_app_full_stack/viewModel/UserViewModel/UserViewModel.dart';
 void main() {
@@ -32,6 +33,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (_) => HomeViewModel(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => ProfileViewModel(),
         ),
         
       ],

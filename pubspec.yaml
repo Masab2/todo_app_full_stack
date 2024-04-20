@@ -38,6 +38,8 @@ dependencies:
   intl: any
   json_annotation: ^4.8.1
   freezed_annotation: ^2.4.1
+  slideable: ^0.0.2
+  cached_network_image: any
 
 dev_dependencies:
 

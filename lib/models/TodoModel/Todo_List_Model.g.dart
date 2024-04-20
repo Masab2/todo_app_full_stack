@@ -26,7 +26,7 @@ _$TodosListImpl _$$TodosListImplFromJson(Map<String, dynamic> json) =>
       userid: json['userId'] as String? ?? '',
       title: json['title'] as String? ?? '',
       description: json['description'] as String? ?? '',
-      date: json['Date'] as String? ?? '',
+      date: json['date'] as String? ?? '',
       createdDate: json['createdAt'] as String? ?? '',
     );
 
@@ -36,6 +36,6 @@ Map<String, dynamic> _$$TodosListImplToJson(_$TodosListImpl instance) =>
       'userId': instance.userid,
       'title': instance.title,
       'description': instance.description,
-      'Date': instance.date,
+      'date': instance.date,
       'createdAt': instance.createdDate,
     };

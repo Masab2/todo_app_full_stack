@@ -1,5 +1,6 @@
-import 'dart:developer';
+// ignore_for_file: use_build_context_synchronously
 
+import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_app_full_stack/models/UserModel/UserModel.dart';
@@ -45,18 +46,14 @@ class LoginViewModel with ChangeNotifier {
             ),
           );
           Utils.displaySnackBar(context, 'Login Successfully');
-          UserModel model = UserModel(
-            id: value['Id'].toString(),
-            email: value['Email'].toString(),
-            token: value['token'].toString(),
-            name: value['Name'].toString(),
-          );
+          UserModel model = UserModel.fromJson(value);
           Navigator.popAndPushNamed(
             context,
             RoutesNames.homeScreen,
             arguments: model,
           );
         }).onError((error, stackTrace) {
+          log(error.toString());
           Utils.displaySnackBar(context, error.toString());
         });
       }

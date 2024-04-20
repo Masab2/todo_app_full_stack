@@ -5,6 +5,7 @@ import 'package:todo_app_full_stack/views/Auth/LoginScreen.dart';
 import 'package:todo_app_full_stack/views/Auth/SignupScreen.dart';
 import 'package:todo_app_full_stack/views/ChoiceScreen/ChoiceScreen.dart';
 import 'package:todo_app_full_stack/views/HomeScreen/HomeScreenView.dart';
+import 'package:todo_app_full_stack/views/ProfileScreen/ProfileScreen.dart';
 import 'package:todo_app_full_stack/views/SplashView/SplashView.dart';
 
 class Routes {
@@ -31,6 +32,12 @@ class Routes {
         return MaterialPageRoute(
           builder: (_) => HomeScreenView(
             args: args as UserModel,
+          ),
+        );
+      case RoutesNames.profileScreen:
+        return MaterialPageRoute(
+          builder: (_) => ProfileScreen(
+            args: args.toString(),
           ),
         );
       default:

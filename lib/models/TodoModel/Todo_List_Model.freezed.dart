@@ -204,7 +204,7 @@ mixin _$TodosList {
   String get title => throw _privateConstructorUsedError;
   @JsonKey(name: 'description')
   String get description => throw _privateConstructorUsedError;
-  @JsonKey(name: 'Date')
+  @JsonKey(name: 'date')
   String get date => throw _privateConstructorUsedError;
   @JsonKey(name: 'createdAt')
   String get createdDate => throw _privateConstructorUsedError;
@@ -225,7 +225,7 @@ abstract class $TodosListCopyWith<$Res> {
       @JsonKey(name: 'userId') String userid,
       @JsonKey(name: 'title') String title,
       @JsonKey(name: 'description') String description,
-      @JsonKey(name: 'Date') String date,
+      @JsonKey(name: 'date') String date,
       @JsonKey(name: 'createdAt') String createdDate});
 }
 
@@ -291,7 +291,7 @@ abstract class _$$TodosListImplCopyWith<$Res>
       @JsonKey(name: 'userId') String userid,
       @JsonKey(name: 'title') String title,
       @JsonKey(name: 'description') String description,
-      @JsonKey(name: 'Date') String date,
+      @JsonKey(name: 'date') String date,
       @JsonKey(name: 'createdAt') String createdDate});
 }
 
@@ -350,7 +350,7 @@ class _$TodosListImpl implements _TodosList {
       @JsonKey(name: 'userId') this.userid = '',
       @JsonKey(name: 'title') this.title = '',
       @JsonKey(name: 'description') this.description = '',
-      @JsonKey(name: 'Date') this.date = '',
+      @JsonKey(name: 'date') this.date = '',
       @JsonKey(name: 'createdAt') this.createdDate = ''});
 
   factory _$TodosListImpl.fromJson(Map<String, dynamic> json) =>
@@ -369,7 +369,7 @@ class _$TodosListImpl implements _TodosList {
   @JsonKey(name: 'description')
   final String description;
   @override
-  @JsonKey(name: 'Date')
+  @JsonKey(name: 'date')
   final String date;
   @override
   @JsonKey(name: 'createdAt')
@@ -420,7 +420,7 @@ abstract class _TodosList implements TodosList {
       @JsonKey(name: 'userId') final String userid,
       @JsonKey(name: 'title') final String title,
       @JsonKey(name: 'description') final String description,
-      @JsonKey(name: 'Date') final String date,
+      @JsonKey(name: 'date') final String date,
       @JsonKey(name: 'createdAt') final String createdDate}) = _$TodosListImpl;
 
   factory _TodosList.fromJson(Map<String, dynamic> json) =
@@ -439,7 +439,7 @@ abstract class _TodosList implements TodosList {
   @JsonKey(name: 'description')
   String get description;
   @override
-  @JsonKey(name: 'Date')
+  @JsonKey(name: 'date')
   String get date;
   @override
   @JsonKey(name: 'createdAt')

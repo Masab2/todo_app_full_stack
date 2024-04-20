@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:todo_app_full_stack/data/Response/ApiResponse.dart';
@@ -24,10 +23,8 @@ class HomeViewModel with ChangeNotifier {
   String get selectedFilter => _selectedFilter;
 
   Future<void> fetchAllTodoList(userId) async {
-    log('Helllo Loading');
     setTodoList(ApiResponse.loading());
     _repo.fetchAllTodos(userId).then((value) {
-      log('Hloo');
       setTodoList(ApiResponse.completed(value));
     }).onError((error, stackTrace) {
       setTodoList(ApiResponse.error(error.toString()));
